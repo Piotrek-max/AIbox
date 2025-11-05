@@ -8,6 +8,21 @@ description="Labolatory for AI methods and applications"
 readme="README.md"
 requires-python=">=3.11"
 
+dependencies=[
+  "numpy",
+  "matplotlib",
+  "pandas",
+  "scikit-learn",
+  "torch",
+  "dotenv",
+  "optuna",
+  "pydantic",
+  "opencv-python",
+  "optuna",
+  "ISLP"
+]
+
+
 [project.urls]
 Homepage="https://github.com/Piotrek-max/AIbox"
 

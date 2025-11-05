@@ -1,1 +1,10 @@
+# Ignore IDE specific files
 .idea
+
+# Python virtual environment
+.venv
+
+# Environmental variables
+.env
+
+etc
