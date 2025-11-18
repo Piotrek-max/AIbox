@@ -19,7 +19,8 @@ dependencies=[
   "pydantic",
   "opencv-python",
   "optuna",
-  "ISLP"
+  "ISLP",
+  "xgboost"
 ]
 
 
