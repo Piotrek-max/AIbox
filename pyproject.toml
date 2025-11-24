@@ -20,7 +20,8 @@ dependencies=[
   "opencv-python",
   "optuna",
   "ISLP",
-  "xgboost"
+  "xgboost",
+    "kaggle"
 ]
 
 
