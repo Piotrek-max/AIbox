@@ -22,7 +22,8 @@ dependencies=[
     "ISLP",
     "xgboost",
     "kaggle",
-    "openml"
+    "openml",
+    "manim>=0.19.2",
 ]
 
 
