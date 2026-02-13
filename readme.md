@@ -1,13 +1,9 @@
 # AIbox 📦
 
 AIbox is a laboratory for exploring, testing, and visualizing various AI and machine learning methods.  
-It combines ideas from statistical learning, computer vision, and mathematical modeling — created purely for curiosity, research, and fun.
-
-## Goals
-- Experiment with classical and modern ML/AI techniques  
-- Build reusable tools for analysis, visualization, and data processing  
-- Connect mathematical concepts with real AI applications  
-- Learn and document progress through interactive notebooks  
+Main goal is to create a sandbox environment for experiments with different algorithms.
+Repository might be also helpful for new learners with their journey into AI/ML.
+Project combines ideas from statistical learning, mathematical modeling and deep learning.
 
 ## Current Problems
 - **Regression**: Implementing and comparing linear regression, ridge regression, and lasso regression on synthetic and real datasets.
@@ -16,3 +12,13 @@ It combines ideas from statistical learning, computer vision, and mathematical m
 - **Knowledge Distillation**: Experimenting with teacher-student models to transfer knowledge from a larger model to a smaller one.
 - **Pipelines**: Building end-to-end machine learning pipelines for data preprocessing, model training, and evaluation.
 - **Boosting**: Implementing boosting algorithms like Gradient Boosting for improving model performance.
+
+## Usage
+To setup the environment, follow these steps:
+1. Clone the repository
+2. Create a virtual environment:
+```shell
+uv sync
+```
+3. Experiment with different notebooks
+   
