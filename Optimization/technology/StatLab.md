@@ -5,8 +5,8 @@ The lab provides hands-on experience with real-world datasets and emphasizes the
  - [An Introduction to Statistical Learning](https://www.statlearning.com/)
 
 #### Python Libraries
- - scikit-learn
+ - [[scikit-learn]]
  - statsmodels
- - pandas
+ - [[Pandas]]
  - numpy
  - matplotlib
