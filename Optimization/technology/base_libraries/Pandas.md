@@ -1,3 +1,6 @@
+# Pandas
+
+![[Pasted image 20260226123548.png]]
 Pandas id fundamental high-level building block for data analysis.
 ## Library Highlights
 - A fast and efficient **DataFrame** object for data manipulation with integrated indexing
@@ -83,13 +86,62 @@ DataFrame’s to_numpy method returns the data contained in the DataFrame as a t
 
 Text and binary data loading functions in pandas (chosen):
 
-| Function   | Description |
-| ---------- | ----------- |
-| read_csv   |             |
-| read_excel |             |
-|            |             |
+| Function    | Description                                                                                              |
+| ----------- | -------------------------------------------------------------------------------------------------------- |
+| read_csv    | Load delimited data from a file, URL, or file-like object; use comma as default delimiter                |
+| read_excel  | Read tabular data from an Excel XLS or XLSX file                                                         |
+| read_sql    | Read the results of a SQL query (using SQLAlchemy)                                                       |
+| read_xml    | Read a table of data from an XML file                                                                    |
+| read_pickle | Read an object stored by pandas using the Python pickle format                                           |
+| read_html   | Read all tables found in the given HTML document                                                         |
+| read_json   | Read data from a JSON (JavaScript Object Notation) string representation, file, URL, or file-like object |
+In this notes we will focus on CSV, excel and json format:
+```csv
+a,b,c,d,message 
+1,2,3,4,hello 
+5,6,7,8,world 
+9,10,11,12,foo
+```
+
+Example file reading:
+```python
+df = pd.read_csv("examples/ex1.csv")
+
+Out[1]: 
+a b c d message 
+0 1 2 3 4 hello 
+1 5 6 7 8 world 
+2 9 10 11 12 foo
+```
+
+You can allow pandas to assign default column names, or you can specify names yourself 
+`, names=["a", "b", "c", "d", "message"]`.
+
+The na_values option accepts a sequence of strings to add to the default list of strings recognized as missing `, na_values=["NULL"]`:
+```python
+something a b c d message 
+0 one 1 2 3.0 4 NaN 
+1 two 5 6 NaN 8 world 
+2 three 9 10 11.0 12 foo
+```
+Some useful [[Pandas]] `read_csv` function arguments:
+
+| Argument  | Description                                                                                                                                                                                                                                                          |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sep       | **Character sequence** or **regular expression** to use to split fields in each row.                                                                                                                                                                                 |
+| header    | Row number to use as column names; defaults to 0 (first row), but should be None if there is no header row.                                                                                                                                                          |
+| nrows     | Number of rows to read from beginning of file (not counting the header)                                                                                                                                                                                              |
+| iterator  | Return a TextFileReader object for reading the file piecemeal. This object can also be used with the with statement.                                                                                                                                                 |
+| chunksize | For iteration, size of file chunks                                                                                                                                                                                                                                   |
+| decimal   | Decimal separator in numbers (e.g., "." or ","); default is ".".                                                                                                                                                                                                     |
+| thousands | Separator for thousands (e.g., "," or "."); default is None.                                                                                                                                                                                                         |
+| engine    | CSV parsing and conversion engine to use; can be one of "c", "python", or "pyarrow". The default is "c", though the newer "pyarrow" engine can parse some files much faster. The "python" engine is slower but supports some features that the other engines do not. |
 
 
+
+## Work with API's
+
+## Datab
 ## Sources:
 - Python-for-Data-Analysis
 - [Pandas Docs](https://pandas.pydata.org/)

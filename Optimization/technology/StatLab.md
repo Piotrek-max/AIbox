@@ -6,7 +6,7 @@ The lab provides hands-on experience with real-world datasets and emphasizes the
 
 #### Python Libraries
  - [[scikit-learn]]
- - statsmodels
+ - [[statsmodels]]
  - [[Pandas]]
- - numpy
- - matplotlib
+ - [[NumPy]]
+ - [[Matplotlib]]

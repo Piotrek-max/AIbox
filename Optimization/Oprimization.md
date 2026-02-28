@@ -11,6 +11,3 @@ For 10 elements from range
 | Raw data | 464 B           | 80 B          | 80 B             |
 
 ### Function calls
-
-
-
