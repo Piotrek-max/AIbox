@@ -1,5 +1,5 @@
-## Common object stucture
-All Python obects are extention of [[PyObject]] type.
+## Common object structure
+All Python objects are extension of [[PyObject]] type.
 CPython on start allocates small `int` type objects in range  $<-5,256>$  
 
 ### Memory usage
