@@ -5,14 +5,6 @@ Main goal is to create a sandbox environment for experiments with different algo
 Repository might be also helpful for new learners with their journey into AI/ML.
 Project combines ideas from statistical learning, mathematical modeling and deep learning.
 
-
-#### Python Libraries
- - scikit-learn
- - statsmodels
- - Pandas
- - NumPy
- - Seaborn/Matplotlib
-
 ## Current Problems
 - **Regression**: Implementing and comparing linear regression, ridge regression, and lasso regression on synthetic and real datasets.
 - **Classification**: Exploring logistic regression, support vector machines, and decision trees for binary and multi-class classification tasks.
@@ -29,6 +21,4 @@ To setup the environment, follow these steps:
 uv sync
 ```
 3. Experiment with different notebooks
-
-#### Sources
- - [An Introduction to Statistical Learning](https://www.statlearning.com/)
+   
